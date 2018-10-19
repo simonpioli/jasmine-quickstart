@@ -13,6 +13,44 @@
             return !bool;
         }
 
+        function add(x, y) {
+            return x + y;
+        }
+
+        function minus(x, y) {
+            return x - y;
+        }
+
+        describe('Maths Functions', () => {
+            let num1;
+            let num2;
+            
+            beforeEach(() => {
+                num1 = 2;
+                num2 = 3;
+            });
+
+            it('Gets the sum of 2 numbers', () => {
+                // arrange
+
+                // act
+                const result = add(num1, num2);
+
+                // assert
+                expect(result).toBe(5);
+            });
+
+            it('Gets the difference between 2 numbers', () => {
+                // arrange
+
+                // act
+                const result = minus(num1, num2);
+
+                // assert
+                expect(result).toBe(-1);
+            });
+        });
+
         describe('Write Your Test Group Descriptions Here', () => {
             it('Write Your Test Expectation Here', () => {
                 // arrange
